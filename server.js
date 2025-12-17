@@ -40,6 +40,7 @@ app.post("/api/groq", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error", details: err.message });
   }
 });
+app.get("/", (req, res) => res.send("🚀 API is running"));
 
 
 app.listen(5000, () => {
